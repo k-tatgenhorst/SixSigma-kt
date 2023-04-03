@@ -1,7 +1,8 @@
 # Internal - Prepare canvas for charts
 
 .ss.prepCanvas <- function(main = "Six Sigma graph", sub = "My Six Sigma Project",
-                           ss.col = c("#666666", "#BBBBBB", "#CCCCCC", "#DDDDDD", "#EEEEEE", "#FFFFFF")){
+                           ss.col = c("#666666", "#BBBBBB", "#CCCCCC", "#DDDDDD", "#EEEEEE", 
+                                      "#FFFFFF", "#000000", "#000000")){
   #Plot
   grid::grid.newpage()
   grid::grid.rect(gp = grid::gpar(col = ss.col[2], 
@@ -25,7 +26,7 @@
                              name = "title")
   grid::pushViewport(vp.title)
   grid::grid.text (main, 
-                   gp = grid::gpar(fontsize = 20))
+                   gp = grid::gpar(fontsize = 20, col = ss.col[7]))
   grid::popViewport()
   
   #Subtitle
