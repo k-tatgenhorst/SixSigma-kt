@@ -117,7 +117,7 @@ function(steps, inputs.overall, outputs.overall,
 			name = "inputs")
 	grid::pushViewport(vp.inputs)
 	paintBox()
-	grid::grid.text("INPUTS\nX", gp = grid::gpar(col = ss.col[7])
+	grid::grid.text("INPUTS\nX", gp = grid::gpar(col = ss.col[7]))
 	grid::grid.move.to(x = 0.5, y = 0.1)
 	grid::upViewport()
 	vp.inputsText <- grid::viewport(layout.pos.col = 2:nsteps, 
