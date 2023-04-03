@@ -86,9 +86,9 @@ ss.pMap <-
 function(steps, inputs.overall, outputs.overall,
                   input.output, x.parameters, y.features,
 		  main = "Six Sigma Process Map", sub,
-		  ss.col = c("#666666", "#BBBBBB", "#CCCCCC", "#DDDDDD", "#EEEEEE")){
+		  ss.col = c("#666666", "#BBBBBB", "#CCCCCC", "#DDDDDD", "#EEEEEE", "#FFFFFF")){
 	nsteps <- length(steps)
-	.ss.prepCanvas(main,sub)
+	.ss.prepCanvas(main,sub,ss.col)
 	paintBox <- function(){
 		x <- c(rep(0.10, 4), 0.30, 0.70, 
 			rep(0.90, 4), 0.7, 0.3)
