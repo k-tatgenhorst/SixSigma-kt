@@ -155,7 +155,8 @@ function(steps, inputs.overall, outputs.overall,
 		for (j in 1:length(input.output[[i]])){
 			grid::grid.text(input.output[[i]][j], 
 				y = unit(0.7, "npc") - unit(j-1, "lines"),
-				just = c("center","top"))
+				just = c("center","top"),
+				       gp = grid::gpar(col = ss.col[7]))
 		}
 		if (i==1){
 			grid::grid.line.to(x = 0.5, y = 0.91,
